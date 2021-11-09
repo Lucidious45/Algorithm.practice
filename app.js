@@ -9,6 +9,11 @@ For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 Only integers greater than or equal to zero will be supplied to the function. */
 
+function convertToF(celsius) {
+    let fahrenheit = celsius * 9 / 5 + 32;
+    return fahrenheit;
+  }
+
 function factorialize(num) {
     let res = 1;
     for (let i = 2; i <= num; i++) {
@@ -18,6 +23,8 @@ function factorialize(num) {
   }
   a = factorialize(5);
   b = factorialize(10);
+  c = convertToF(20)
 
   console.log(a);
   console.log(b);
+  console.log(c);
